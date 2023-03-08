@@ -1,0 +1,42 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+.tabuleiro{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 25px;
+    padding: 5%;
+}
+.personagem{
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border: 4px solid black;
+    background-color: aliceblue;
+}
+.personagem.false img{
+    opacity: 0.5;
+}
+.personagem .imgPersonagem{
+    position: relative;
+    width: 200px;
+    height: 270px;
+}
+.personagem .imgPersonagem img{
+    width: 100%;
+    height: 100%;
+
+}
+.personagem .imgPersonagem .wrong{
+    top: 20px;
+    position: absolute;
+}
+.personagem.selected{
+    background-color: green;
+    border: 4px solid green;
+}
