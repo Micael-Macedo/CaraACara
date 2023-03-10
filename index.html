@@ -1,171 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cara a Cara</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara a Cara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
 
-    <body>
-        <h1>Cara a Cara</h1>
+<body>
+    <div class="mainText">
         <div class="message">
+            <p>Faça perguntas para descobrir o personagem do seu amigo</p>
+        </div>
+        <img src="images/CARA A CARA.png" alt="CARA A CARA" srcset="">
+        <div class="turn-message">
             <h2>Selecione seu personagem</h2>
         </div>
         <button onclick="reiniciar()">Reiniciar</button>
-        <div class="tabuleiro">
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/david-tennant.jpg" alt="">
-                </div>
-                <h2>David-tennant</h2>
+    </div>
+    <div class="tabuleiro">
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/david-tennant.jpg" alt="">
             </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/elliotpage.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/fleebag.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/Jamie-Lee-Curtis-1.webp" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/LazaroRamos.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/Mason Alexander.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/MichelleYeoh.jfif" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/oscar-isaac.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/PedroPascal.jfif" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/TaisAraujo.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/wagnermoura.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/ryan-gosling.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/YasminFinney.jpg" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
-            <div class="personagem">
-                <div class="imgPersonagem">
-                    <img src="images/" alt="">
-                </div>
-                <h2></h2>
-            </div>
+            <h2>David Tennant</h2>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/elliotpage.jpg" alt="">
+            </div>
+            <h2>Elliot Page</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/fleebag.jpg" alt="">
+            </div>
+            <h2>Phoebe 
+                Waller-Bridge</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/Jamie-Lee-Curtis-1.webp" alt="">
+            </div>
+            <h2>Jamie Lee Curtis</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/LazaroRamos.jpg" alt="">
+            </div>
+            <h2>Lázaro Ramos</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/Mason Alexander.jpg" alt="">
+            </div>
+            <h2>Mason Alexander</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/MichelleYeoh.jfif" alt="">
+            </div>
+            <h2>Michelle Yeoh</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/oscar-isaac.jpg" alt="">
+            </div>
+            <h2>Oscar Isaac</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/PedroPascal.jfif" alt="">
+            </div>
+            <h2>Pedro Pascal</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/TaisAraujo.jpg" alt="">
+            </div>
+            <h2>Tais Araujo</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/wagnermoura.jpg" alt="">
+            </div>
+            <h2>Wagner Moura</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/ryan-gosling.jpg" alt="">
+            </div>
+            <h2>Ryan Gosling</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/Andrew Garfield.png" alt="">
+            </div>
+            <h2>Andrew Garfield</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/DevPatel.png" alt="">
+            </div>
+            <h2>Dev Patel</h2>
+        </div>
+        <div class="personagem">
+            <div class="imgPersonagem">
+                <img src="images/Michael B Jordan.png" alt="">
+            </div>
+            <h2>Michael B. Jordan</h2>
+        </div>
+    </div>
+    <div class="developers">
+        <a href="https://micael-macedo.github.io/" target="_blank">Micael Macedo</a>
+        <a href="" target="_blank">Giulia Lemos</a>
+    </div>
+    <script src="script.js"></script>
+</body>
 
 </html>

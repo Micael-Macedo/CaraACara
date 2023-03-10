@@ -1,0 +1,156 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    color: white;
+    background-color: #5F37FF;
+
+    .mainText {
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        img{
+            width: 70%;
+            margin-bottom: 57px;
+        }
+        .message {
+            p {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 35px;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+        .turn-message{
+            h2 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                text-align: center;
+                color: #9E92CD;
+                margin-bottom: 75px;
+            }
+        }
+
+        button {
+            border: none;
+            border-radius: 20px;
+            padding: 16px 56px 15px;
+            background-color: #9E8AF1;
+            color: #5636AE;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            margin-bottom: 75px;
+        }
+    }
+
+    .tabuleiro {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px 30px;
+        padding-bottom: 5%;
+        $personagemWidth: 210px;
+        $personagemHeight: 280px;
+
+        .personagem {
+            width: $personagemWidth;
+            height: $personagemHeight;
+            border: 13px solid white;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.5s;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+            &.selected {
+                border: 13px solid rgb(67, 161, 67);
+
+                h2 {
+                    background-color: rgb(67, 161, 67);
+                    color: white;
+                }
+            }
+
+            &.false {
+                background-color: #E54E1E;
+
+                img {
+                    opacity: 0;
+                }
+            }
+
+            .imgPersonagem {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                }
+            }
+
+            h2 {
+                width: $personagemWidth + 10px;
+                height: 50px;
+                top: 90%;
+                right: -13px;
+                position: absolute;
+                background-color: white;
+                color: #5636AE;
+                border-radius: 30px;
+                text-align: center;
+                padding: 21px 8px 18px 8px;
+            }
+        }
+    }
+    .developers{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        a{
+            text-decoration: none;
+            color:  #9E8AF1;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .mainText {
+            .message{
+                p{
+                    font-size: 16px;
+                }
+            }
+            img{
+                margin-bottom: 20px;
+            }
+            .turn-message{
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .tabuleiro{
+            padding-bottom: 70px;
+        }
+    }
+}
